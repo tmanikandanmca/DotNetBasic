@@ -20,7 +20,7 @@ public class ValuesvsReference
        , out int subtraction)
     {
 
-
+        subtraction = x - y;
     }
 
 
@@ -42,7 +42,7 @@ public static class RefClass
     public static void AddData1(int x, int y, ref int addition
        , out int subtraction)
     {
-
+        subtraction = 0;
 
     }
 
