@@ -4,15 +4,45 @@ using System;
 using System.Collections;
 
 
-string Folder = "D:\\Move\\WIP";
- 
+PatternProb4 m = new PatternProb4();
+m.result(16);
 
-Folder = "D:\\Move\\Ready";
-DirectoryInformation.GetfileInFolder(Folder);
 
-string fileName = "test1.txt";
+//Matrix m = new Matrix();
 
-File.Create(Folder + fileName);
+//Console.WriteLine("Enter the Row Size:");
+//int x = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter the Column Size:");
+//int y = Convert.ToInt32(Console.ReadLine());
+
+//int[,] mat1 = new int[x, y];
+//int[,] mat2 = new int[x, y];
+//int[,] res = new int[x, y];
+
+
+//Console.WriteLine("Enter First Matrix");
+//mat1 = m.GetMatrixValues(x, y);
+
+//Console.WriteLine("Enter Second Matrix");
+//mat2 = m.GetMatrixValues(x, y);
+
+
+//Console.WriteLine("Sum of 2 Matrix");
+//res = m.MultiMatrix(mat1, mat2, x, y);
+//m.PrintMatrix(res, x, y);
+
+
+
+
+//string Folder = "D:\\Move\\WIP";
+
+
+//Folder = "D:\\Move\\Ready";
+//DirectoryInformation.GetfileInFolder(Folder);
+
+//string fileName = "test1.txt";
+
+//File.Create(Folder + fileName);
 
 
 //Console.WriteLine("Enter the Number:");

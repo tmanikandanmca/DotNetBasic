@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace DotNetBasic
 {
@@ -81,28 +82,29 @@ namespace DotNetBasic
 
 
         }
+ 
 
-        //2 6 6
-        //4 7 8
+        
+        public int[,] MultiMatrix(int[,] a, int[,] b, int x, int y)
+        {
+            int[,] DArray = new int[x, y];
+            int sum = 0;
 
-        //2 8
-        //4 1
-        //6 7
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    for(int k = 0; k < y; k++)
+                    {
+                        sum = sum + (a[i,k] * b[k,j]);
+                    }
+                    DArray[i,j] = sum;
+                    sum = 0;
 
-
-        //public int[,] MultiMatrix(int[,] a, int[,] b, int x, int y)
-        //{
-        //    int[,] DArray = new int[x, y];
-
-        //    for (int i = 0; i < x; i++)
-        //    {
-        //        for (int j = 0; j < y; j++)
-        //        {
-        //            DArray[i, j] = a[i, j] * b[i, j];
-        //        }
-        //    }
-        //    return DArray;
-        //}
+                }
+            }
+            return DArray;
+        }
     }
 }
 
